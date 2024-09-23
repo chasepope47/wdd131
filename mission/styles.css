@@ -1,0 +1,29 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #006EB6;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  footer img {
+    width: 150px;
+    margin-top: 20px;
+  }
+  

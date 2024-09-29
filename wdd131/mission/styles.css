@@ -1,29 +1,44 @@
 body {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  header {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    color: #006EB6;
-  }
-  
-  main {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-  }
-  
-  footer img {
-    width: 150px;
-    margin-top: 20px;
-  }
-  
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+header {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #006EB6;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+footer img {
+  width: 150px;
+  margin-top: 20px;
+}
+
+/* Dark theme styles */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark h2 {
+  color: #006EB6; /* A lighter blue for accessibility */
+}
+
+body.dark footer img {
+  /* Adjust the logo for the dark theme (this will be handled via JS) */
+}

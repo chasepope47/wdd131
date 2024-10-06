@@ -1,6 +1,6 @@
-const menuButton = document.getElementById('menu-button');
-const navLinks = document.getElementById('nav-links');
+const menuButton = document.querySelector('header h1');
+const navMenu = document.querySelector('nav ul');
 
 menuButton.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+    navMenu.classList.toggle('show');
 });

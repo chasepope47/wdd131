@@ -1,44 +1,107 @@
+/* General styles */
 body {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  padding: 20px;
-  background-color: white;
-  color: black;
-}
-
-header {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-h2 {
-  color: #006EB6;
-}
-
-main {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-footer img {
-  width: 150px;
-  margin-top: 20px;
-}
-
-/* Dark theme styles */
-body.dark {
-  background-color: #333;
-  color: white;
-}
-
-body.dark h2 {
-  color: #006EB6; /* A lighter blue for accessibility */
-}
-
-body.dark footer img {
-  /* Adjust the logo for the dark theme (this will be handled via JS) */
-}
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  header h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #e7e7e7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  #logo {
+    max-width: 150px;
+    margin-top: 10px;
+  }
+  
+  /* Light and Dark Theme Styles */
+  body.light-theme {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  body.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+  
+  .dark-theme header,
+  .dark-theme footer {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-theme ul li {
+    background-color: #555;
+  }
+  
+  .dark-theme nav a,
+  .dark-theme footer a {
+    color: #f4f4f4;
+  }
+  
+  .dark-theme nav a:hover,
+  .dark-theme footer a:hover {
+    text-decoration: underline;
+  }
+  

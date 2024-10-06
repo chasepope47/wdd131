@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--text-light);
+  box-sizing: border-box;
 }
 
 header {
@@ -26,10 +27,10 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: var(--primary-color);
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 #menu-button {
@@ -38,25 +39,31 @@ nav {
   color: var(--text-light);
   font-size: 1.5em;
   cursor: pointer;
+  display: none; /* Hidden by default, will show on mobile */
 }
 
 #nav-links {
-  display: none; /* Hide by default for small screens */
-  list-style-type: none;
-  padding: 0;
+  list-style: none; /* Remove bullets */
+  display: flex; /* Align the list items in a row */
   margin: 0;
+  padding: 0;
 }
 
 #nav-links li {
-  display: block;
-  margin: 10px 0;
+  margin: 0 15px; /* Space between the links */
 }
 
 #nav-links li a {
-  color: var(--accent-color);
+  color: white;
   text-decoration: none;
+  font-size: 1.2em;
   padding: 10px;
   display: inline-block;
+}
+
+#nav-links li a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
 }
 
 footer {
@@ -91,47 +98,42 @@ img {
   object-fit: cover;
 }
 
-/* Media Queries for responsiveness */
-@media (min-width: 700px) {
+/* Mobile layout for narrow screens */
+@media (max-width: 699px) {
+  #menu-button {
+    display: block; /* Show the menu button on mobile */
+  }
+
+  #nav-links {
+    display: none; /* Initially hide the menu on mobile */
+    flex-direction: column;
+  }
+
+  #nav-links.active {
+    display: flex; /* Display the menu when active */
+  }
+}
+
+/* Layout for medium screens */
+@media (min-width: 700px) and (max-width: 999px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Layout for large screens */
 @media (min-width: 1000px) {
   #menu-button {
     display: none; /* Hide the menu button on large screens */
   }
 
   #nav-links {
-    display: flex; /* Make the links visible and flexed horizontally */
+    display: flex; /* Make the links visible in a row */
     justify-content: center;
     gap: 20px;
-    list-style: none;
-  }
-
-  #nav-links li {
-    display: inline; /* Make list items inline for horizontal display */
-    margin: 0;
-  }
-
-  #nav-links li a {
-    padding: 10px;
-    font-size: 1.2em;
   }
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile Menu Toggle */
-@media (max-width: 999px) {
-  #menu-button {
-    display: block;
-  }
-
-  #nav-links.active {
-    display: block; /* Show links when 'active' class is added on mobile */
   }
 }

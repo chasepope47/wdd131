@@ -1,0 +1,41 @@
+/* Apply the Roboto font to the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for header, main, and footer */
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #e0f7fa; /* Light blueish background */
+}
+
+/* Style for the main element with grid layout */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout by default */
+    gap: 1rem;
+}
+
+/* Style for section elements */
+section {
+    padding: 1rem;
+    background-color: #fff; /* White background for sections */
+}
+
+/* Media Query: Change layout and styles for wider viewports */
+@media screen and (min-width: 500px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr; /* Two equal columns for larger screens */
+    }
+}

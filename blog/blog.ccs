@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #473144;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+  color: #AF1B3F;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+/* Skip to Content */
+.skiptocontent a {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #AF1B3F;
+  color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
+
+.skiptocontent a:focus {
+  top: 0;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #EFC69B;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.main-nav a {
+  font-size: 1.1em;
+  color: #AF1B3F;
+  text-decoration: none;
+}
+
+/* Main Section */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews {
+  width: 70%;
+}
+
+/* Article Review Items */
+.review-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #EFC69B;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-meta {
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: #666;
+}
+
+.book-content img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.book-content h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #AF1B3F;
+}
+
+/* Sidebar Filter */
+.filter {
+  width: 25%;
+  border: 1px solid #EFC69B;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter h3 {
+  color: #AF1B3F;
+}
+
+label, select, input[type="submit"] {
+  font-size: 1em;
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 2px solid #EFC69B;
+  color: #473144;
+  font-size: 0.9em;
+}

@@ -26,67 +26,69 @@
   </header>
   
   <main id="maincontent">
-    <section class="reviews">
-      <article class="review-item">
-        <div class="book-meta">
-          <p><strong>Date:</strong> 2017</p>
-          <p><strong>Age:</strong> 10-14</p>
-          <p><strong>Genre:</strong> Biography</p>
-        </div>
-        <div class="book-content">
-          <h2>Messi: A Boy Who Became A Star</h2>
-          <img src="Messi_A_Boy_Who_Became_A_Star.jpg" alt="Book cover of Messi A Boy Who Became A Star">
-          <p>This is the inspiring children's story of Lionel Messi, a boy who became a star. Born in a poor family, the small boy faced many obstacles in life, including a medical condition that prevented him from growing. But he decided to follow his dream, worked hard, and overcame all obstacles to become one of the best soccer players in history.</p>
-          <a href="#">Read More...</a>
-        </div>
-      </article>
+    <div class="container">
+      <section class="reviews column">
+        <article class="review-item">
+          <div class="book-meta">
+            <p><strong>Date:</strong> 2017</p>
+            <p><strong>Age:</strong> 10-14</p>
+            <p><strong>Genre:</strong> Biography</p>
+          </div>
+          <div class="book-content">
+            <h2>Messi: A Boy Who Became A Star</h2>
+            <img src="Messi_A_Boy_Who_Became_A_Star.jpg" alt="Book cover of Messi A Boy Who Became A Star">
+            <p>This is the inspiring children's story of Lionel Messi, a boy who became a star. Born in a poor family, the small boy faced many obstacles in life, including a medical condition that prevented him from growing. But he decided to follow his dream, worked hard, and overcame all obstacles to become one of the best soccer players in history.</p>
+            <a href="#">Read More...</a>
+          </div>
+        </article>
 
-      <article class="review-item">
-        <div class="book-meta">
-          <p><strong>Date:</strong> 2022</p>
-          <p><strong>Age:</strong> 15+</p>
-          <p><strong>Genre:</strong> Philosophy</p>
-        </div>
-        <div class="book-content">
-          <h2>The Art of War</h2>
-          <img src="The_Art_Of_War.jpg" alt="Book cover of The Art of War">
-          <p>Originally written in the 5th century, "The Art of War" is a masterpiece of military strategy and Chinese philosophy that has influenced countless leaders, both on the battlefield and in the boardroom. The exhortations and advice from "The Art of War" have echoed throughout the centuries as pieces of timeless wisdom, no matter the foe you may be facing.</p>
-          <a href="#">Read More...</a>
-        </div>
-      </article>
-    </section>
+        <article class="review-item">
+          <div class="book-meta">
+            <p><strong>Date:</strong> 2022</p>
+            <p><strong>Age:</strong> 15+</p>
+            <p><strong>Genre:</strong> Philosophy</p>
+          </div>
+          <div class="book-content">
+            <h2>The Art of War</h2>
+            <img src="The_Art_Of_War.jpg" alt="Book cover of The Art of War">
+            <p>Originally written in the 5th century, "The Art of War" is a masterpiece of military strategy and Chinese philosophy that has influenced countless leaders, both on the battlefield and in the boardroom. The exhortations and advice from "The Art of War" have echoed throughout the centuries as pieces of timeless wisdom, no matter the foe you may be facing.</p>
+            <a href="#">Read More...</a>
+          </div>
+        </article>
+      </section>
 
-    <!-- Filter Section -->
-    <aside class="filter">
-      <h3>Filter Books</h3>
-      <form>
-        <label for="date">Date:</label>
-        <select id="date" name="date">
-          <option value="all">All</option>
-          <option value="2022">2022</option>
-          <option value="2021">2021</option>
-        </select><br><br>
+      <!-- Filter Section -->
+      <aside class="filter column">
+        <h3>Filter Books</h3>
+        <form>
+          <label for="date">Date:</label>
+          <select id="date" name="date">
+            <option value="all">All</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select><br><br>
 
-        <label for="genre">Genre:</label>
-        <select id="genre" name="genre">
-          <option value="all">All</option>
-          <option value="fiction">Fiction</option>
-          <option value="nonfiction">Non-Fiction</option>
-        </select><br><br>
+          <label for="genre">Genre:</label>
+          <select id="genre" name="genre">
+            <option value="all">All</option>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+          </select><br><br>
 
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author"><br><br>
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author"><br><br>
 
-        <label for="age">Age Group:</label>
-        <select id="age" name="age">
-          <option value="all">All</option>
-          <option value="10-12">10-12</option>
-          <option value="12-14">12-14</option>
-        </select><br><br>
+          <label for="age">Age Group:</label>
+          <select id="age" name="age">
+            <option value="all">All</option>
+            <option value="10-12">10-12</option>
+            <option value="12-14">12-14</option>
+          </select><br><br>
 
-        <input type="submit" value="Filter">
-      </form>
-    </aside>
+          <input type="submit" value="Filter">
+        </form>
+      </aside>
+    </div>
   </main>
 
   <footer>

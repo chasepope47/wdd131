@@ -50,7 +50,6 @@ header h1 {
 .main-nav {
   display: grid;
   justify-content: end; /* Align navigation to the right */
-  justify-items: end; /* Align individual nav items to the right */
   gap: 20px;
 }
 
@@ -91,16 +90,24 @@ header h1 {
 
 /* Book Meta Information */
 .book-meta {
-  text-align: left;
-  font-size: 0.9em;
-  line-height: 1.5;
+  text-align: right;
+  font-size: 1em;
+  line-height: 1.4;
   color: #666;
+  border-right: 1px solid #EFC69B;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.book-meta p {
+  margin: 0;
 }
 
 /* Book Content (Title, Image, Description) */
 .book-content img {
+  display: block;
+  margin: 0 auto; /* Center image */
   max-width: 150px;
-  margin-bottom: 10px;
 }
 
 .book-content h2 {
@@ -154,7 +161,7 @@ label, select, input[type="submit"] {
 /* Footer */
 footer {
   text-align: center;
-  padding: 200px;
+  padding: 20px;
   background-color: #fff;
   border-top: 2px solid #EFC69B;
   color: #473144;

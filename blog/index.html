@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A blog reviewing popular books for kids and teens.">
   <meta name="author" content="Chase Pope">
-  <title>Book Review Blog</title>
+  <title>Kids Read For Fun</title>
   <link rel="stylesheet" href="blog.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
   </div>
 
   <header>
-    <h1>Book Review Blog</h1>
+    <h1>Kids Read For Fun</h1>
     <nav>
       <ul class="main-nav">
         <li><a href="#">About</a></li>
@@ -27,34 +27,8 @@
   
   <main id="maincontent">
     <div class="container">
-      <section class="reviews column">
-        <article class="review-item">
-          <div class="book-meta">
-            <p><strong>Date:</strong> 2017</p>
-            <p><strong>Age:</strong> 10-14</p>
-            <p><strong>Genre:</strong> Biography</p>
-          </div>
-          <div class="book-content">
-            <h2>Messi: A Boy Who Became A Star</h2>
-            <img src="Messi_A_Boy_Who_Became_A_Star.jpg" alt="Book cover of Messi A Boy Who Became A Star">
-            <p>This is the inspiring children's story of Lionel Messi, a boy who became a star. Born in a poor family, the small boy faced many obstacles in life, including a medical condition that prevented him from growing. But he decided to follow his dream, worked hard, and overcame all obstacles to become one of the best soccer players in history.</p>
-            <a href="#">Read More...</a>
-          </div>
-        </article>
-
-        <article class="review-item">
-          <div class="book-meta">
-            <p><strong>Date:</strong> 2022</p>
-            <p><strong>Age:</strong> 15+</p>
-            <p><strong>Genre:</strong> Philosophy</p>
-          </div>
-          <div class="book-content">
-            <h2>The Art of War</h2>
-            <img src="The_Art_Of_War.jpg" alt="Book cover of The Art of War">
-            <p>Originally written in the 5th century, "The Art of War" is a masterpiece of military strategy and Chinese philosophy that has influenced countless leaders, both on the battlefield and in the boardroom. The exhortations and advice from "The Art of War" have echoed throughout the centuries as pieces of timeless wisdom, no matter the foe you may be facing.</p>
-            <a href="#">Read More...</a>
-          </div>
-        </article>
+      <section class="reviews column" id="article-list">
+        <!-- Articles will be generated here by JavaScript -->
       </section>
 
       <!-- Filter Section -->
@@ -71,18 +45,16 @@
           <label for="genre">Genre:</label>
           <select id="genre" name="genre">
             <option value="all">All</option>
-            <option value="fiction">Fiction</option>
-            <option value="nonfiction">Non-Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="biography">Biography</option>
+            <option value="philosophy">Philosophy</option>
           </select><br><br>
-
-          <label for="author">Author:</label>
-          <input type="text" id="author" name="author"><br><br>
 
           <label for="age">Age Group:</label>
           <select id="age" name="age">
             <option value="all">All</option>
             <option value="10-12">10-12</option>
-            <option value="12-14">12-14</option>
+            <option value="12-16">12-16</option>
           </select><br><br>
 
           <input type="submit" value="Filter">
@@ -92,9 +64,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 Book Review Blog. All rights reserved.</p>
+    <p>&copy; 2024 Kids Read For Fun. All rights reserved.</p>
   </footer>
 
-  <script src="blog.js"></script>
+  <script src="blog.js" defer></script>
 </body>
 </html>

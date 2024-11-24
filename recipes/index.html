@@ -24,7 +24,24 @@
       <input type="text" id="search" placeholder="Find a recipe">
       <button type="submit">Search</button>
     </form>
+  <main>
+    <section id="results">
+      <!-- Search results will be displayed here -->
+  </section>
+</main>
 
+    <form class="filter-form">
+      <label for="filter">Filter by Category:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Entree">Entree</option>
+        <option value="Side">Side</option>
+        <option value="Southwest">Southwest</option>
+        <option value="Indian">Indian</option>
+      </select>
+    </form>
+    
     <section class="recipe">
       <img src="images/apple-crisp.jpg" alt="Apple Crisp">
       <div class="recipe-details">
@@ -53,6 +70,6 @@
     </p>
   </footer>
 
-  <script src="main.js" defer></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>

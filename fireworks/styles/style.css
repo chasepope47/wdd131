@@ -1,14 +1,23 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #f4f4f4;
+    line-height: 1.6;
+
+    /* Background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                      url('../images/firework_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* White text for contrast */
 }
 
+/* Header Styling */
 header {
-    background: #444;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px 0;
 }
@@ -25,29 +34,33 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f4f4f4;
+    color: #fff;
     text-decoration: none;
 }
 
+/* Main Section Styling */
 main {
     padding: 20px;
 }
 
+main section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 img {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #f4f4f4;
-    margin: 10px 0;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 0;
-    background: #444;
-    color: #fff;
-}
-
+/* Button Styling */
 button {
     padding: 10px 15px;
     border: none;
@@ -60,4 +73,13 @@ button {
 
 button:hover {
     background: #c0392b;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
 }

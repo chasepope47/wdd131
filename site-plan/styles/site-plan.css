@@ -1,0 +1,168 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+/* Root Variables */
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #a43312;
+  --accent2-color: #381d2a;
+  --heading-font: "IM Fell French Canon SC", serif;
+  --paragraph-font: "Lato", sans-serif;
+  --background-color: #f4f4f9;
+  --text-color: #333;
+  --carousel-bg: white;
+  --carousel-border-color: var(--primary-color);
+}
+
+/* General Styles */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+header h1,
+header h2 {
+  font-family: var(--heading-font);
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: var(--accent1-color);
+  margin: 2em 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+p {
+  margin: 1em 0;
+}
+
+/* Table Styles */
+.colors {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.colors th,
+.colors td {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+}
+
+.colors .primary {
+  background-color: var(--primary-color);
+}
+
+.colors .secondary {
+  background-color: var(--secondary-color);
+}
+
+.colors .accent1 {
+  background-color: var(--accent1-color);
+}
+
+.colors .accent2 {
+  background-color: var(--accent2-color);
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  padding: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 0.5em 1em;
+  margin: 0 0.5em;
+}
+
+nav a:hover {
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+/* Carousel Styles */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid var(--carousel-border-color);
+  border-radius: 10px;
+  background-color: var(--carousel-bg);
+}
+
+.carousel-item {
+  display: none;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.carousel-item.active{
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carousel div {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide all carousel items initially */
+.carousel div {
+  display: none;
+}
+
+.carousel div.active {
+  display: block;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--primary-color);
+  color: white;
+}
